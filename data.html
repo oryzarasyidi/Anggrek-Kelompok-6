@@ -2,108 +2,74 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log Data Anggrek</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4fff4;
-        }
-
-        header {
-            background-color: #5f8f6f;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #49775c;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .box {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #49775c;
-        }
-
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
-        }
-
-        footer {
-            background-color: #49775c;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>Data Pertumbuhan | Kelompok 6</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Log Data Pertumbuhan Anggrek</h1>
-    <p>Data hasil kontrol harian</p>
+    <h1>Data Pertumbuhan Anggrek</h1>
+    <p>Proyek Informatika – Kelompok 6 Kelas XB MAN 1 Yogyakarta</p>
 </header>
 
 <nav>
     <a href="index.html">Beranda</a>
-    <a href="kontrol.html">Kontrol Harian</a>
-    <a href="data.html">Log Data</a>
+    <a href="tentang.html">Tentang Anggrek</a>
+    <a href="menanam.html">Cara Menanam</a>
     <a href="perawatan.html">Perawatan</a>
-    <a href="tentang.html">Tentang</a>
+    <a href="kontrol.html">Kontrol Harian</a>
+    <a href="data.html">Data Pertumbuhan</a>
 </nav>
 
-<section>
+<div class="container">
 
-    <div class="box">
-        <h2>Informasi Log Data</h2>
+    <div class="card">
+        <h2>Penjelasan Data</h2>
         <p>
-            Halaman ini menampilkan data pertumbuhan anggrek yang diperoleh dari
-            hasil pengisian form kontrol harian. Data tersimpan otomatis dan
-            diperbarui secara berkala.
+            Halaman ini menampilkan data hasil pencatatan kontrol harian
+            pertumbuhan anggrek yang telah diinput melalui form kontrol.
+            Data ini tersimpan secara otomatis dalam Google Spreadsheet.
+        </p>
+        <p>
+            Dengan adanya data ini, pengguna dapat memantau perkembangan
+            anggrek dari waktu ke waktu serta mengevaluasi efektivitas
+            perawatan yang dilakukan.
         </p>
     </div>
 
-    <div class="box">
-        <h2>Tabel Log Pertumbuhan</h2>
+    <div class="card">
+        <h2>Tabel Data Pertumbuhan</h2>
+        <p>
+            Berikut merupakan data pertumbuhan anggrek yang telah
+            dikumpulkan berdasarkan hasil pengamatan harian.
+        </p>
 
+        <!-- GOOGLE SPREADSHEET -->
         <iframe 
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbUtZLL_M9iBpgPC7rAOuYGnqHPgSkYbu5h2xOAEwlezejR_-ADv9cb07sFoJRG7uTCrRq6k9yV2i_/pubhtml">
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRbUtZLL_M9iBpgPC7rAOuYGnqHPgSkYbu5h2xOAEwlezejR_-ADv9cb07sFoJRG7uTCrRq6k9yV2i_/pubhtml"
+            width="100%" 
+            height="600" 
+            frameborder="0">
         </iframe>
     </div>
 
-</section>
+    <div class="card">
+        <h2>Manfaat Data Pertumbuhan</h2>
+        <ul>
+            <li>Mengetahui perkembangan anggrek secara berkala</li>
+            <li>Mengevaluasi metode perawatan yang digunakan</li>
+            <li>Menjadi dokumentasi pertumbuhan tanaman</li>
+            <li>Mendukung pembelajaran berbasis data</li>
+        </ul>
+    </div>
+
+</div>
 
 <footer>
-    <p>&copy; 2026 | Website Anggrek XB MAN 1 Yogyakarta</p>
+    <p>
+        © 2026 Proyek Informatika <br>
+        <strong>Kelompok 6 Kelas XB MAN 1 Yogyakarta</strong>
+    </p>
 </footer>
 
 </body>
